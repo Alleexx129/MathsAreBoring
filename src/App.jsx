@@ -89,7 +89,6 @@ function App() {
                   : box)
           );
         } 
-        return;
       } else if (checkOverlap(currentRect, otherRect) && (currentBox.current.className.includes("Neg") || otherRef.current.className.includes("Neg"))) {
         if (otherRef.current.className.split(" ")[0].replace("Neg", "") == currentBox.current.className.split(" ")[0] || currentBox.current.className.split(" ")[0].replace("Neg", "") == otherRef.current.className.split(" ")[0]) {
           setBoxes(prev =>
@@ -100,7 +99,6 @@ function App() {
                 : box)
           );
         }
-        return;
       }
     }
 
