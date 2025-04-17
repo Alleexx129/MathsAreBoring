@@ -8,7 +8,7 @@ function MainPage() {
       <Router basename="/MathsAreBoring">
         <Routes>
           <Route path="/" element={<MainPage />} />
-          <Route path="/about" element={<App />} />
+          <Route path="/WorkspaceExample" element={<App />} />
         </Routes>
       </Router>
       <div className="MainPage">
