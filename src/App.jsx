@@ -125,8 +125,7 @@ function App() {
             key={box.id}
             nodeRef={boxRefs.current[box.id]}
             position={{ x: box.x, y: box.y }}
-            onStop={(_, data) => onStop(box.id, data)}
-          >
+            onStop={(_, data) => onStop(box.id, data)}>
             <div ref={boxRefs.current[box.id]} className={box.className}>
               {box.text}
             </div>
