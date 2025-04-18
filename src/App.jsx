@@ -4,15 +4,15 @@ import './App.css';
 
 function App() {
   const [genBoxes] = useState([
-    { id: 69, x: 0.4 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxX", text: "X" },
-    { id: 696, x: 0.5 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxXX", text: "X²" },
-    { id: 6969, x: 0.6 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxY", text: "Y" },
-    { id: 69696, x: 0.7 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxYY", text: "Y²" },
+    { id: 69, x: 0.05 * window.innerWidth + 0.1214 * window.innerWidth * 0, y: 0.1 * visualViewport.height, className: "BoxX", text: "X" },
+    { id: 696, x: 0.05 * window.innerWidth + 0.1214 * window.innerWidth * 1, y: 0.1 * visualViewport.height, className: "BoxXX", text: "X²" },
+    { id: 6969, x: 0.05 * window.innerWidth + 0.1214 * window.innerWidth * 2, y: 0.1 * visualViewport.height, className: "BoxY", text: "Y" },
+    { id: 69696, x: 0.05 * window.innerWidth + 0.1214 * window.innerWidth * 3, y: 0.1 * visualViewport.height, className: "BoxYY", text: "Y²" },
     
-    { id: 696969, x: 0.8 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxNegX", text: "-X" },
-    { id: 6969696, x: 0.9 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxNegXX", text: "-X²" },
-    { id: 69696969, x: 1 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxNegY", text: "-Y" },
-    { id: 696969696, x: 1.1 * visualViewport.width / 2, y: 0*visualViewport.height / 2, className: "BoxNegYY", text: "-Y²" }
+    { id: 696969, x: 0.05 * window.innerWidth + 0.1214 * window.innerWidth * 4, y: 0.1 * visualViewport.height, className: "BoxNegX", text: "-X" },
+    { id: 6969696, x: 0.05 * window.innerWidth + 0.1214 * window.innerWidth * 5, y: 0.1 * visualViewport.height, className: "BoxNegXX", text: "-X²" },
+    { id: 69696969, x: 0.05 * window.innerWidth + 0.1214 * window.innerWidth * 6, y: 0.1 * visualViewport.height, className: "BoxNegY", text: "-Y" },
+    { id: 696969696, x: 0.05 * window.innerWidth + 0.115 * window.innerWidth * 7, y: 0.1 * visualViewport.height, className: "BoxNegYY", text: "-Y²" },
   ]);
   const [boxes, setBoxes] = useState([
   ]);
@@ -124,6 +124,7 @@ function App() {
           }
   
           return (
+            
             <Draggable
               key={box.id}
               nodeRef={boxRefs.current[box.id]}
